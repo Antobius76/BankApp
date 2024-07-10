@@ -16,4 +16,4 @@ def get_mask_account(acc_num: str) -> Any:
     if acc_num.isdigit() and len(acc_num) == 20:
         return f"**{acc_num[-4::]}"
     else:
-        None
+        return None
