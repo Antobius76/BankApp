@@ -1,7 +1,4 @@
-from typing import Any
-
-
-def get_mask_card(card_num: str) -> Any:
+def get_mask_card(card_num: str) -> str | None:
     """Функция возвращает маску номера карты"""
 
     if card_num.isdigit() and len(card_num) == 16:
@@ -10,7 +7,7 @@ def get_mask_card(card_num: str) -> Any:
         return None
 
 
-def get_mask_account(acc_num: str) -> Any:
+def get_mask_account(acc_num: str) -> str | None:
     """Функция возвращает маску номера счета"""
 
     if acc_num.isdigit() and len(acc_num) == 20:
