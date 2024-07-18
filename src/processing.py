@@ -8,8 +8,8 @@ def filter_by_state(lst: list[dict], state="EXECUTED") -> list[dict]:
     return new_lst
 
 
-def sort_by_date(dct_list: list[dict], reverse: bool = True) -> list[dict]:
+def sort_by_date(lst: list[dict], reverse: bool = True) -> list[dict]:
     """Функция прнимает список словарей и
     возвращает отсортированный по дате новый список"""
-    lst.sort(key=lambda x: x["date"])
+    lst.sort(key=lambda x: x["date"], reverse=reverse)
     return lst
