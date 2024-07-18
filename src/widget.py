@@ -8,7 +8,7 @@ def mask_account_card(number: str) -> str:
         return f"Счет {get_mask_account(number[-20:])}"
     else:
         card = number[:-16]
-        return f"{card} {get_mask_card(number[-16:])}"
+        return f"{card}{get_mask_card(number[-16:])}"
 
 
 def get_date(info: str) -> str:
