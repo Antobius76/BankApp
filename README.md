@@ -12,3 +12,8 @@
 + black 24.4.2
 + isort 5.13.2
 + mypy 1.10.0
+
+## Разработаны тесты:
++ test_mask.py
++ test_widget.py
++ test_processing.py
