@@ -1,4 +1,4 @@
-def filter_by_state(lst: list[dict], state="EXECUTED") -> list[dict]:
+def filter_by_state(lst: list[dict], state: str = "EXECUTED") -> list[dict]:
     """Функция прнимает список словарей и возвращает новый
     отфильтрованный по значению state список"""
     new_lst = []
